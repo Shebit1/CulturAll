@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.event-item:last-child {
+  grid-column: 2; 
+  justify-self:center;
+}
+.main-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 32px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 80px; 
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 800px;
+  margin-bottom: 40px;
+}
+
+.event-item {
+  text-align: center;
+}
+
+.event-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.event-item p {
+  margin-top: 10px;
+  font-size: 18px;
+  color: #333;
+}
+
+.placeholder {
+  width: 100%;
+  height: 150px;
+  background-color: #ddd;
+  border-radius: 8px;
+}
+
+.container-mare {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7e4c1;
+  padding: 20px 0;
+  
+}
+
+.carusel-evenimente-spt-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carusel-evenimente-spt-title {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.carusel-evenimente-spt {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carusel-evenimente-spt-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carusel-evenimente-spt-item {
+  min-width: 25%;
+  text-align: left;
+  padding: 15px;
+}
+
+.carusel-evenimente-spt-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carusel-evenimente-spt-item h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.carusel-evenimente-spt-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.carusel-evenimente-spt-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carusel-evenimente-spt-control-prev {
+  left: -20px;
+}
+
+.carusel-evenimente-spt-control-next {
+  right: -20px;
+}

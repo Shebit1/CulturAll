@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CulturAll</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  
+  <link rel="stylesheet" href="/carusel.css">
+
+  <link rel="stylesheet" href="/HomeBeforeLog/HomeBeforeLog.css">
+</head>
+<body>
+
+  
+ <!-- Secțiunea de antet -->
+ <header class="antet">
+  <!-- Logo-ul site-ului -->
+  <div class="logo">
+      <a href="#"><img src="/HomeBeforeLog/imagini/logo.png" alt="Logo"></a>
+  </div>
+  
+  <!-- Container pentru căutare și butoane -->
+  <div class="container-antet">
+      <div class="bara-cautare-meniu">
+          <!-- Bara de căutare -->
+          <div class="bara-cautare">
+              <input type="text" placeholder="Caută...">
+              <button><i class="bx bx-search"></i></button>
+          </div>
+          
+          <!-- Butonul de Log in cu link către pagina de autentificare -->
+          <a href="/Log-in/log-in.html" class="buton-logare">Log in</a>
+          
+          <!-- Butonul de Sign up cu link către pagina de înregistrare -->
+          <a href="/Sing-up/sing-up.html" class="buton-inregistrare"><i class="fas fa-globe"></i> Sign up</a>
+          
+         <!-- Meniu -->
+         <div class="dropdown">
+          <!-- Butonul de meniu -->
+          <button class="buton-meniu"><i class="bx bx-menu"></i></button>
+          <div class="content">
+            <div class="coloane-meniu">
+              <div class="meniu-col1">
+                <div class="logo">
+                  <img src="/imagini/logo.png" alt="CulturAll" />
+                </div>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bx-envelope"></i></a>
+              </div>
+              <div class="meniu-col2">
+                <a href="/evenimente1/eveniment1.html">Evenimente</a>
+                <a href="/Arta/tipEveniment.html">Arta si Cultura</a>
+                <a href="/EvenimentMuzica/EvenimentMuzica.html">Muzica</a>
+                <a href="/evenimentTeatru/EvenimentTeatru.html">Teatru</a>
+                <a href="/Eat&Drink/Eat&Drink.html">Eat & Drink</a>
+                <a href="/Monden/monden.html">Monden</a>
+                <a href="/Sport/sport.html">Sport</a>
+                <a href="/Carte/carte.html">Carte</a>
+                <a href="/Abonament/Abonment.html">Abonamente</a>
+                <a href="/EvenimentUnic/enevimentUnic.html">Eveniment Surpriza</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+</header>
+
+
+ <!-- Primul carusel -->
+
+<div class="carousel">
+  <div class="carousel-inner">
+    <input class="carousel-open" type="radio" id="carousel-1" name="carousel" aria-hidden="true" hidden="" checked="checked">
+    <div class="carousel-item">
+      <img src="/HomeBeforeLog/imagini/filit.png" alt="Eveniment 1">
+    </div>
+
+    <input class="carousel-open" type="radio" id="carousel-2" name="carousel" aria-hidden="true" hidden="">
+    <div class="carousel-item">
+      <img src="/imagini/desprenoi.jpg" alt="Eveniment 2">
+    </div>
+
+    <input class="carousel-open" type="radio" id="carousel-3" name="carousel" aria-hidden="true" hidden="">
+    <div class="carousel-item">
+      <img src="/HomeBeforeLog/imagini/filit.png" alt="Eveniment 3">
+    </div>
+
+    <input class="carousel-open" type="radio" id="carousel-4" name="carousel" aria-hidden="true" hidden="">
+    <div class="carousel-item">
+      <img src="/HomeBeforeLog/imagini/filit.png" alt="Eveniment 4">
+    </div>
+
+    <!-- Butoane de control -->
+    <label for="carousel-4" class="carousel-control prev control-1">‹</label>
+    <label for="carousel-2" class="carousel-control next control-1">›</label>
+    <label for="carousel-1" class="carousel-control prev control-2">‹</label>
+    <label for="carousel-3" class="carousel-control next control-2">›</label>
+    <label for="carousel-2" class="carousel-control prev control-3">‹</label>
+    <label for="carousel-4" class="carousel-control next control-3">›</label>
+    <label for="carousel-3" class="carousel-control prev control-4">‹</label>
+    <label for="carousel-1" class="carousel-control next control-4">›</label>
+
+    <!-- Indicatori -->
+    <ol class="carousel-indicators">
+      <li>
+        <label for="carousel-1" class="carousel-bullet">•</label>
+      </li>
+      <li>
+        <label for="carousel-2" class="carousel-bullet">•</label>
+      </li>
+      <li>
+        <label for="carousel-3" class="carousel-bullet">•</label>
+      </li>
+      <li>
+        <label for="carousel-4" class="carousel-bullet">•</label>
+      </li>
+    </ol>
+  </div>
+</div>
+<!-- Al doilea carusel -->
+<div class="container-mare">
+  <div class="carusel-evenimente-container">
+      <h2 class="carusel-evenimente-title">Evenimente </h2>
+      <div class="carusel-evenimente" id="evenimenteCarousel">
+          <div class="carusel-evenimente-track">
+              <div class="carusel-evenimente-item">
+                  <img src="/imagini/arta sicultura.png" alt="Eveniment 1">
+                  <h5>Eveniment 1</h5>
+                  <p>Scurtă descriere</p>
+              </div>
+              <div class="carusel-evenimente-item">
+                  <img src="/imagini/arta sicultura.png" alt="Eveniment 2">
+                  <h5>Eveniment 2</h5>
+                  <p>Scurtă descriere</p>
+              </div>
+              <div class="carusel-evenimente-item">
+                  <img src="/imagini/arta sicultura.png" alt="Eveniment 3">
+                  <h5>Eveniment 3</h5>
+                  <p>Scurtă descriere</p>
+              </div>
+              <div class="carusel-evenimente-item">
+                  <img src="/imagini/arta sicultura.png" alt="Eveniment 4">
+                  <h5>Eveniment 4</h5>
+                  <p>Scurtă descriere</p>
+              </div>
+              <div class="carusel-evenimente-item"> 
+                <img src="/imagini/arta sicultura.png" alt="Eveniment 1">
+                <h5>Eveniment 1</h5>
+                <p>Scurtă descriere</p>
+            </div>
+            <div class="carusel-evenimente-item">
+                <img src="/imagini/arta sicultura.png" alt="Eveniment 2">
+                <h5>Eveniment 2</h5>
+                <p>Scurtă descriere</p>
+            </div>
+            <div class="carusel-evenimente-item">
+                <img src="/imagini/arta sicultura.png" alt="Eveniment 3">
+                <h5>Eveniment 3</h5>
+                <p>Scurtă descriere</p>
+            </div>
+            <div class="carusel-evenimente-item">
+                <img src="/imagini/arta sicultura.png" alt="Eveniment 4">
+                <h5>Eveniment 4</h5>
+                <p>Scurtă descriere</p>
+            </div>
+          </div>
+      </div>
+      <button class="carusel-evenimente-control carusel-evenimente-control-prev" id="prevBtn">&lt;</button>
+      <button class="carusel-evenimente-control carusel-evenimente-control-next" id="nextBtn">&gt;</button>
+  </div>
+</div>
+ <!-- Despre Noi -->
+
+ <div class="despre-noi">
+  <div class="continut">
+    <div class="text">
+      <a href="/Despre-noi/"><h2>Despre noi</h2></a>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+        ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat. Duis aute irure dolor in
+        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
+        culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+    <div class="imagine">
+      <img src="/imagini/desprenoi.jpg" width="300px" alt="Despre Noi" />
+    </div>
+  </div>
+</div>
+
+
+
+  <!-- Subsol -->
+ 
+
+  <footer class="subsol">
+    <!-- Coloană Stânga -->
+   
+    <div class="col-stanga">
+      <div class="col-sus-stanga">
+      <div class="logo">
+        <img src="/imagini/logo.png" alt="CulturAll">
+      </div>
+      <div class="text-subsol">
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+      </div>
+    </div>
+      <div class="copyright">
+        &copy; 2024 - CulturAll. Toate drepturile rezervate.
+      </div>
+    </div>
+  
+    <!-- Coloană Centru -->
+    <div class="col-centru">
+      <div class="linkuri-subsol">
+        <a href="/evenimente1/eveniment1.html">Evenimente</a>
+        <a href="/HomeAfterLog/HomeAfterLog.html">Despre noi</a>
+      </div>
+      <nav>
+     <!-- Butonul de Log in cu link către pagina de autentificare -->
+     <a href="/Log-in/log-in.html" class="buton-logare-subol">Log in</a>
+          
+     <!-- Butonul de Sign up cu link către pagina de înregistrare -->
+     <a href="/Sing-up/sing-up.html" class="buton-inregistrare"><i class="fas fa-globe"></i> Sign up</a>
+     
+      </nav>
+    </div>
+  
+    <!-- Coloană Dreapta -->
+    <div class="col-dreapta">
+      <div class="social">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bx-envelope"></i></a>
+      </div>
+      <div class="termeni">
+        <a href="#">Termeni și condiții</a>
+      </div>
+    </div>
+  </footer>
+
+
+  
+    <!-- Pentru al doilea carusel cu evenimente -->
+  <script >const track = document.querySelector('.carusel-evenimente-track');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const items = document.querySelectorAll('.carusel-evenimente-item');
+    
+    let currentIndex = 0;
+    
+    function updateCarousel() {
+        const width = items[0].getBoundingClientRect().width;
+        track.style.transform = `translateX(-${currentIndex * width}px)`;
+    }
+    
+    nextBtn.addEventListener('click', () => {
+        if (currentIndex < items.length - 1) {
+            currentIndex++;
+            updateCarousel();
+        }
+    });
+    
+    prevBtn.addEventListener('click', () => {
+        if (currentIndex > 0) {
+            currentIndex--;
+            updateCarousel();
+        }
+    });
+    
+    // Ajustare dimensiuni la încărcare
+    window.addEventListener('resize', updateCarousel);
+    
+    </script>
+<script>
+window.addEventListener('resize', () => {
+  const items = document.querySelectorAll('.carusel-evenimente-item');
+  const track = document.querySelector('.carusel-evenimente-track');
+  const width = items[0].getBoundingClientRect().width;
+  track.style.transform = `translateX(-${currentIndex * width}px)`;
+});
+</script>
+</body>
+</html>
+

@@ -1,0 +1,212 @@
+
+
+.container {
+  text-align: center;
+  color: #333;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+.sad-face {
+  width: 200px; 
+  height: 200px;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+
+.message {
+  font-size: 24px; 
+  color: #000000;
+  line-height: 1.5;
+}
+
+.highlight {
+  display: block; 
+  margin-top: 5px; 
+}
+/* Evenimente */
+.sectiune-evenimente-saptamana {
+  background-color: #EFE1BC;
+  padding: 20px;
+  margin-top: 100px;
+  height: 300px;
+  align-items: flex-end;
+}
+
+.eveniment img {
+  width: 100%;
+}
+
+.eveniment h3 {
+  font-size: 18px;
+  color: black;
+  margin-top: 10px;
+  justify-self: start;
+  text-decoration: none;
+}
+
+.eveniment p {
+  font-size: 15px;
+  margin-top: 5px;
+  color: #555;
+  justify-self: start;
+}
+
+.sectiune-evenimente h2 {
+  font-size: 35px;
+  color: black;
+  text-align: left;
+  margin-bottom: 50px;
+  margin-top: 60px;
+  margin-left: 11%;
+}
+
+.carusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sageti {
+  background: none;
+  border: none;
+  font-size: 24px;
+  color: black;
+  cursor: pointer;
+}
+
+.slide {
+  display: flex;
+  overflow: hidden;
+  width: 80%;
+}
+
+.eveniment {
+  width: 25%;
+  padding: 10px;
+  margin: 0 1%;
+  text-align: center;
+  display: inline-block;
+}
+
+
+.eveniment a {
+  text-decoration: none;
+  color: inherit;
+}
+
+
+
+/* Stil pentru antet */
+.antet {
+  background-color: #973c2c; 
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stil pentru logo */
+.antet .logo img {
+  width: 70px;
+  height: auto;
+}
+
+/* Container pentru bara de căutare și butoane */
+.container-antet {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 8px 24px;
+  gap: 10px;
+}
+
+/* Structură pentru bara de căutare și butoane */
+.bara-cautare-meniu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Stil pentru bara de căutare */
+.bara-cautare {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.bara-cautare input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: none;
+}
+
+.bara-cautare button {
+  background: none;
+  border: none;
+  color: #9D4536;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Stil pentru linkul Log in */
+.buton-logare {
+  background-color: #9D4536;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.buton-logare:hover {
+  background-color: #582900;
+}
+
+/* Stil pentru linkul Sign up */
+.buton-inregistrare {
+  background-color: white;
+  color: #9D4536;
+  border: 2px solid #9D4536;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buton-inregistrare:hover {
+  background-color: #9D4536;
+  color: white;
+}
+
+/* Stil pentru butonul de meniu */
+.buton-meniu {
+  background: none;
+  border: none;
+  color: #9D4536;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@keyframes pulseLight {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50% { transform: scale(1.05); opacity: 0.8; }
+}
+
+.sad-face.pulseLight {
+  animation: pulseLight 2s infinite ease-in-out;
+}

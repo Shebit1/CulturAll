@@ -1,0 +1,114 @@
+/* General */
+body {
+    font-family: 'Mulish', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+/* Stil pentru secțiunea Planuri și Prețuri */
+.planuri-preturi {
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    margin: 40px 0;
+  }
+  
+  .planuri-preturi h2 {
+    font-weight: 900;
+    font-size: 36px;
+    background: linear-gradient(to right, #6b3319, #53130f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 40px;
+    margin-top: 25px;
+  
+  }
+
+  
+  .planuri-preturi p {
+    text-align: center;
+    color: #747070;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  
+  .carduri {
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+    margin-top: 90px;
+  }
+  
+  /* Stil Carduri */
+  .card {
+    background-color: #fff;
+    padding: 20px;
+    width: 280px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgb(151, 60, 44, 0.6);
+    border-top: 5px solid;
+    text-align: center;
+    transition: transform 0.3s;
+  }
+  
+  .card:hover {
+    transform: scale(1.05);
+  }
+  
+  .options {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+  }
+  
+  .separator {
+    width: 1px;
+    background-color: #ddd;
+    height: 80px;
+  }
+  
+  .card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #973c2c;
+  }
+  .card h4{
+    font-size: 17px;
+    margin-bottom: 10px;
+    color: #973c2c;
+  }
+
+  .card p, .card ul {
+    color: #666;
+  }
+  
+  .card ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .card ul li {
+    margin-bottom: 5px;
+  }
+  
+  .buton-alege{
+    background-color: transparent;
+    border: 2px solid #973c2c;
+    box-shadow: 0 4px 8px rgb(151, 60, 44, 0.1);
+    color: #973c2c;
+    border-radius: 20px;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+  }
+ 
+  .buton-alege:hover {
+    background-color: #973c2c;
+    color: white;
+  }
+  
+  

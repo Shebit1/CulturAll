@@ -1,0 +1,174 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  color: #000000;
+
+}
+
+.main-container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.image-container img {
+  width: 100%;
+  max-width: 800px;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.text-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    margin-left: 10px;
+  }
+}
+
+.text-content h3 {
+  font-size: 26px;
+  text-transform: uppercase;
+  color: #333;
+  font-weight: normal;
+  /* Eliminăm bold-ul */
+}
+
+.text-content .highlight {
+  color: #ff9900;
+  font-size: 48px;
+  font-weight: normal;
+  /* Eliminăm bold-ul */
+}
+
+.despre-eveniment h4 {
+  font-size: 32px;
+  margin: 15px 0;
+  text-align: left;
+  font-weight: normal;
+}
+
+.despre-eveniment p {
+  font-size: 24px;
+  line-height: 1.6;
+  text-align: left;
+  margin: 10px 0;
+  font-weight: normal;
+}
+
+.text-content-titlu p {
+  font-size: 29px;
+  font-weight: normal;
+}
+
+.text-content-titlu p {
+  font-size: 29px;
+  font-weight: normal;
+}
+
+.ticket-button {
+  display: block;
+  margin-left: auto;
+  /* Mută butonul la dreapta */
+  margin-right: 0;
+  background-color: #9D4536;
+  color: #EFE1BC;
+  border: none;
+  padding: 12px 25px;
+  font-size: 18px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.ticket-button:hover {
+  background-color: #9D4536;
+}
+
+/* Evenimente */
+.container-mare {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7e4c1;
+  padding: 20px 0;
+  
+}
+
+.carusel-evenimente-spt-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.carusel-evenimente-spt-title {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.carusel-evenimente-spt {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carusel-evenimente-spt-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carusel-evenimente-spt-item {
+  min-width: 25%;
+  text-align: left;
+  padding: 15px;
+}
+
+.carusel-evenimente-spt-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carusel-evenimente-spt-item h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #222;
+}
+
+.carusel-evenimente-spt-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.carusel-evenimente-spt-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carusel-evenimente-spt-control-prev {
+  left: -20px;
+}
+
+.carusel-evenimente-spt-control-next {
+  right: -20px;
+}

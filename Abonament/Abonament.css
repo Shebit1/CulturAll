@@ -1,0 +1,71 @@
+/* Stiluri pentru Secțiunea Abonamente */
+.abonamente-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px;
+    width: 100%;
+    background-color: #ffffff;
+  }
+  
+  .abonamente-text {
+    flex: 1;
+    max-width: 500px;
+    text-align: left;
+    justify-items: left;
+    padding: 20px ;
+    
+    margin-left: 200px;
+  }
+  
+  .abonamente-text h2 {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 900;
+    font-size: 35px;
+    background: linear-gradient(to right, #6b3319, #53130f);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-bottom: 20px;
+    margin-bottom: 40px;
+    
+  }
+  
+  .abonamente-text p {
+    font-family: 'Mulish', sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  
+  .vezi-optuni {
+    background-color: #e4cac5;
+    color: #9D4536;
+    font-family: 'Mulish', sans-serif;
+    font-size: 16px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s, color 0.3s;
+  }
+  
+  .vezi-optuni:hover {
+    background-color: #9D4536;
+    color: white;
+  }
+  
+  .abonamente-image {
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .abonamente-image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+  }
+  

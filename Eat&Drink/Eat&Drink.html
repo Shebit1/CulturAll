@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Eat & Drink</title>
+      <link href="Eat&Drink.css" type="text/css" rel="stylesheet" />
+      <link rel="stylesheet" href="../HomeBeforeLog.css" />
+      <link rel="stylesheet" href="../HomeAfterLog.css" />
+      <link rel="stylesheet" href="filtre.css" />
+  
+      <!-- Link către fonturi și pictograme -->
+      <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      />
+      <link
+        href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap"
+        rel="stylesheet"
+      />
+      <link
+        href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+        rel="stylesheet"
+      />
+
+      <!-- Link către stiluri CSS -->
+      <link rel="stylesheet" href="../HomeBeforeLog/HomeBeforeLog.css" />
+      <link rel="stylesheet" href="../HomeAfterLog/HomeAfterLog.css" />
+    </head>
+
+    <body>
+      <!-- Secțiunea de antet -->
+      <header class="antet">
+        <!-- Logo-ul site-ului -->
+        <div class="logo">
+          <a href="/HomeAfterLog/HomeAfterLog.html"><img src="/imagini/logo.png" alt="Logo" /></a>
+          <!-- Înlocuiește cu calea corectă a imaginii logo -->
+        </div>
+  
+        <!-- Container pentru căutare și butoane -->
+        <div class="container-antet">
+          <div class="bara-cautare-meniu">
+            <!-- Bara de căutare -->
+            <div class="bara-cautare">
+              <input type="text" placeholder="Caută..." />
+              <button><i class="bx bx-search"></i></button>
+            </div>
+  
+            <!-- Link către pagina de Favorite -->
+            <a href="/Favorite/Favorite.html" class="buton-favorite"
+              ><i class="bx bx-star"></i
+            ></a>
+  
+            <!-- Link către pagina Evenimentele mele -->
+            <a
+              href="/evenimentele-mele/evenimentele-mele.html"
+              class="buton-evenimente"
+              >Evenimentele mele</a
+            >
+  
+            <!-- Meniu -->
+           <div class="dropdown">
+            <!-- Butonul de meniu -->
+            <button class="buton-meniu"><i class="bx bx-menu"></i></button>
+            <div class="content">
+              <div class="coloane-meniu">
+                <div class="meniu-col1">
+                  <div class="logo">
+                    <img src="/imagini/logo.png" alt="CulturAll" />
+                  </div>
+                  <a href="#"><i class="bx bxl-facebook"></i></a>
+                  <a href="#"><i class="bx bxl-instagram"></i></a>
+                  <a href="#"><i class="bx bx-envelope"></i></a>
+                </div>
+                <div class="meniu-col2">
+                  <a href="/evenimente1/eveniment1.html">Evenimente</a>
+                  <a href="/Arta/tipEveniment.html">Arta si Cultura</a>
+                  <a href="/EvenimentMuzica/EvenimentMuzica.html">Muzica</a>
+                  <a href="/evenimentTeatru/EvenimentTeatru.html">Teatru</a>
+                  <a href="/Eat&Drink/Eat&Drink.html">Eat & Drink</a>
+                  <a href="/Monden/monden.html">Monden</a>
+                  <a href="/Sport/sport.html">Sport</a>
+                  <a href="/Carte/carte.html">Carte</a>
+                  <a href="/Abonament/Abonment.html">Abonamente</a>
+                  <a href="/EvenimentUnic/enevimentUnic.html">Eveniment Surpriza</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+      </header>
+
+
+      <div class="my-events">
+        <div class="page-title">Eat & Drink</div>
+        <div class="content">
+          <div class="left-side">
+            <div class="calendar">
+              <div class="calendar-title">
+                <h3>December</h3>
+              </div>
+              <div class="calendar-date">
+                <div class="calendar-day">Mo</div>
+                <div class="calendar-day">Tu</div>
+                <div class="calendar-day">We</div>
+                <div class="calendar-day">Th</div>
+                <div class="calendar-day">Fr</div>
+                <div class="calendar-day">Sa</div>
+                <div class="calendar-day">Su</div>
+                <div class="calendar-number another-month-number">25</div>
+                <div class="calendar-number another-month-number">26</div>
+                <div class="calendar-number another-month-number">27</div>
+                <div class="calendar-number another-month-number">28</div>
+                <div class="calendar-number another-month-number">29</div>
+                <div class="calendar-number">30</div>
+                <div class="calendar-number">1</div>
+                <div class="calendar-number">2</div>
+                <div class="calendar-number">3</div>
+                <div class="calendar-number event-number event-number-selected">
+                  4
+                </div>
+                <div class="calendar-number">5</div>
+                <div class="calendar-number">6</div>
+                <div class="calendar-number event-number event-number-possible">7</div>
+                <div class="calendar-number">8</div>
+                <div class="calendar-number">9</div>
+                <div class="calendar-number">10</div>
+                <div class="calendar-number event-number event-number-possible">11</div>
+                <div class="calendar-number">12</div>
+                <div class="calendar-number event-number event-number-possible">13</div>
+                <div class="calendar-number">14</div>
+                <div class="calendar-number">15</div>
+                <div class="calendar-number">16</div>
+                <div class="calendar-number">17</div>
+                <div class="calendar-number">18</div>
+                <div class="calendar-number">19</div>
+                <div class="calendar-number">20</div>
+                <div class="calendar-number">21</div>
+                <div class="calendar-number">22</div>
+                <div class="calendar-number">23</div>
+                <div class="calendar-number">24</div>
+                <div class="calendar-number ">25</div>
+                <div class="calendar-number">26</div>
+                <div class="calendar-number">27</div>
+                <div class="calendar-number">28</div>
+                <div class="calendar-number">29</div>
+                <div class="calendar-number">30</div>
+                <div class="calendar-number">31</div>
+                <div class="calendar-number another-month-number">1</div>
+                <div class="calendar-number another-month-number">2</div>
+                <div class="calendar-number another-month-number">3</div>
+                <div class="calendar-number another-month-number">4</div>
+                <div class="calendar-number another-month-number">5</div>
+              </div>
+            </div>
+          </div>
+          <div class="right-side">
+            <div class="event-container">
+              <div class="event-main-title">4 Decembrie</div>
+              <div class="events-list">
+                <div class="event-item">
+                  <div class="event-item-displayed">
+                    <div class="event-title">Eveniment 1</div>
+                    <div class="event-item-details">
+                      <div>11:30-13:00</div>
+                      <img
+                        onclick="divVisibility('event1');"
+                        src="images/arrow-down.png"
+                      />
+                    </div>
+                  </div>
+                  <div id="event1" class="event-item-hidden">
+                    <div class="image"></div>
+                    <div class="location">Locatie</div>
+                  </div>
+                </div>
+                <div class="event-item">
+                  <div class="event-item-displayed">
+                    <div class="event-title">Eveniment 2</div>
+                    <div class="event-item-details">
+                      <div>16:30-18:00</div>
+                      <img
+                        onclick="divVisibility('event2');"
+                        src="images/arrow-down.png"
+                      />
+                    </div>
+                  </div>
+                  <div id="event2" class="event-item-hidden">
+                    <div class="image"></div>
+                    <div class="location">Locatie</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h1 class="title">Eat & Drink <br />luna decembrie</h1>
+
+       
+      
+      <!--Evenimente Eat&Drink-->
+      <div class="events-card-list">
+        <div class="event-card" data-id="1">
+          <div class="event-card-header"></div>
+          <div class="event-card-content">
+            <div class="event-title"><b>Eveniment 1</b></div>
+            <div class="event-location">Locația și ziua</div>
+            <div class="event-actions">
+              <img class="favorite-btn" src="images/star-empty.png" alt="Adaugă la favorite" />
+              <img src="images/minus-circle.png" alt="Elimină" />
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-id="2">
+          <div class="event-card-header"></div>
+          <div class="event-card-content">
+            <div class="event-title"><b>Eveniment 2</b></div>
+            <div class="event-location">Locația și ziua</div>
+            <div class="event-actions">
+              <img class="favorite-btn" src="images/star-empty.png" alt="Adaugă la favorite" />
+              <img src="images/minus-circle.png" alt="Elimină" />
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-id="3">
+          <div class="event-card-header"></div>
+          <div class="event-card-content">
+            <div class="event-title"><b>Eveniment 3</b></div>
+            <div class="event-location">Locația și ziua</div>
+            <div class="event-actions">
+              <img class="favorite-btn" src="images/star-empty.png" alt="Adaugă la favorite" />
+              <img src="images/minus-circle.png" alt="Elimină" />
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-id="4">
+          <div class="event-card-header"></div>
+          <div class="event-card-content">
+            <div class="event-title"><b>Eveniment 4</b></div>
+            <div class="event-location">Locația și ziua</div>
+            <div class="event-actions">
+              <img class="favorite-btn" src="images/star-empty.png" alt="Adaugă la favorite" />
+              <img src="images/minus-circle.png" alt="Elimină" />
+            </div>
+          </div>
+        </div>
+        <div class="event-card" data-id="5">
+          <div class="event-card-header"></div>
+          <div class="event-card-content">
+            <div class="event-title"><b>Eveniment 5</b></div>
+            <div class="event-location">Locația și ziua</div>
+            <div class="event-actions">
+              <img class="favorite-btn" src="images/star-empty.png" alt="Adaugă la favorite" />
+              <img src="images/minus-circle.png" alt="Elimină" />
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <script src="evenimentele-mele.js"></script>
+
+    <!-- Subsol -->
+ 
+    <footer class="subsol">
+      <!-- Coloană Stânga -->
+     
+      <div class="col-stanga">
+        <div class="col-sus-stanga">
+        <div class="logo">
+          <img src="/imagini/logo.png" alt="CulturAll">
+        </div>
+        <div class="text-subsol">
+          <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+        </div>
+      </div>
+        <div class="copyright">
+          &copy; 2024 - CulturAll. Toate drepturile rezervate.
+        </div>
+      </div>
+    
+      <!-- Coloană Centru -->
+      <div class="col-centru">
+        <div class="linkuri-subsol">
+          <a href="/evenimente1/eveniment1.html">Evenimente</a>
+          <a href="/HomeAfterLog/HomeAfterLog.html">Despre noi</a>
+        </div>
+        <nav>
+       <!-- Butonul de Log in cu link către pagina de autentificare -->
+       <a href="/Log-in/log-in.html" class="buton-logare-subol">Log in</a>
+            
+       <!-- Butonul de Sign up cu link către pagina de înregistrare -->
+       <a href="/Sing-up/sing-up.html" class="buton-inregistrare"><i class="fas fa-globe"></i> Sign up</a>
+       
+        </nav>
+      </div>
+    
+      <!-- Coloană Dreapta -->
+      <div class="col-dreapta">
+        <div class="social">
+          <a href="#"><i class="bx bxl-facebook"></i></a>
+          <a href="#"><i class="bx bxl-instagram"></i></a>
+          <a href="#"><i class="bx bx-envelope"></i></a>
+        </div>
+        <div class="termeni">
+          <a href="#">Termeni și condiții</a>
+        </div>
+      </div>
+    </footer>
+    <script src="/Eat&Drink/Eat&Drink.js"></script>
+  </head>
+</html>

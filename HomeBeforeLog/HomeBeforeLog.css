@@ -1,0 +1,793 @@
+/* General */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Mulish', sans-serif;
+}
+html, body {
+  overflow-x: hidden;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #ffffff;
+}
+
+/* Stil pentru antet */
+.antet {
+  background-color: #973c2c; /* Culoarea de fundal a antetului */
+  color: white;
+  width: 100%;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Stil pentru logo */
+.antet .logo img {
+  width: 70px;
+  height: auto;
+}
+
+/* Container pentru bara de căutare și butoane */
+.container-antet {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 50px;
+  padding: 8px 24px;
+  gap: 10px;
+}
+
+/* Structură pentru bara de căutare și butoane */
+.bara-cautare-meniu {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+/* Stil pentru bara de căutare */
+.bara-cautare {
+  display: flex;
+  align-items: center;
+  background-color: #f1f1f1;
+  border-radius: 50px;
+  padding: 5px 10px;
+}
+
+.bara-cautare input {
+  border: none;
+  outline: none;
+  padding: 5px;
+  background: none;
+}
+
+.bara-cautare button {
+  background: none;
+  border: none;
+  color: #9D4536;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Stil pentru linkul Log in */
+.buton-logare {
+  background-color: #9D4536;
+  color: white;
+  text-decoration: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s;
+}
+
+.buton-logare:hover {
+  background-color: #582900;
+}
+
+/* Stil pentru linkul Sign up */
+.buton-inregistrare {
+  background-color: white;
+  color: #9D4536;
+  border: 2px solid #9D4536;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buton-inregistrare:hover {
+  background-color: #9D4536;
+  color: white;
+}
+
+
+
+
+/* Carusel */
+.carousel {
+  position: relative;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  width: 100%; 
+  max-width: 800px;
+  height: auto; 
+  aspect-ratio: 16 / 9; 
+  overflow: hidden;
+}
+
+.carousel-inner {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%; 
+}
+
+.carousel-open:checked + .carousel-item {
+  position: static;
+  opacity: 1;
+}
+
+.carousel-item {
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.6s ease-out;
+  width: 100%; 
+  height: 100%; 
+}
+
+.carousel-item img {
+  display: block;
+  width: 100%; /* Imaginile se ajustează la lățimea containerului */
+  height: auto; /* Înălțimea imaginilor se ajustează proporțional */
+  object-fit: contain; /* Toată imaginea este vizibilă */
+  justify-content: center;
+}
+
+.carousel-control {
+  border-radius: 50%;
+  color: #9D4536; /* Culoarea săgeților */
+  cursor: pointer;
+  display: none;
+  font-size: 60px; /* Dimensiunea săgeților */
+  height: 60px;
+  line-height: 55px;
+  position: absolute;
+  top: 50%; /* Săgețile sunt centrate vertical */
+  transform: translateY(-50%);
+  text-align: center;
+  width: 60px;
+  z-index: 10;
+}
+
+.carousel-control.prev {
+  left: 1%; /* Poziționează săgeata din stânga */
+}
+
+.carousel-control.next {
+  right: 1%; /* Poziționează săgeata din dreapta */
+}
+
+#carousel-1:checked ~ .control-1,
+#carousel-2:checked ~ .control-2,
+#carousel-3:checked ~ .control-3,
+#carousel-4:checked ~ .control-4 {
+  display: block; /* Afișează săgețile doar pentru elementul activ */
+}
+
+.carousel-indicators {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  bottom: 2%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 10;
+}
+
+.carousel-indicators li {
+  display: inline-block;
+  margin: 0 5px;
+}
+
+.carousel-bullet {
+  color: #e5d8d0; /* Culoarea indicatorilor */
+  cursor: pointer;
+  display: block;
+  font-size: 50px; /* Dimensiunea indicatorilor */
+}
+
+#carousel-1:checked ~ .control-1 ~ .carousel-indicators li:nth-child(1) .carousel-bullet,
+#carousel-2:checked ~ .control-2 ~ .carousel-indicators li:nth-child(2) .carousel-bullet,
+#carousel-3:checked ~ .control-3 ~ .carousel-indicators li:nth-child(3) .carousel-bullet,
+#carousel-4:checked ~ .control-4 ~ .carousel-indicators li:nth-child(4) .carousel-bullet {
+  color: #9D4536; /* Indicator activ */
+}
+
+/* Media Queries pentru Responsivitate */
+@media (max-width: 768px) {
+  .carousel {
+    width: 100%; /* Lățimea caruselului ocupă toată pagina */
+    aspect-ratio: 4 / 3; /* Schimbă proporția pentru tablete */
+  }
+
+  .carousel-control {
+    font-size: 40px; /* Săgeți mai mici pentru ecrane mai mici */
+    height: 40px;
+    width: 40px;
+    line-height: 38px;
+  }
+
+  .carousel-bullet {
+    font-size: 25px; /* Indicatori mai mici */
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    width: 100%; /* Lățimea ocupă întreaga pagină */
+    aspect-ratio: 1 / 1; /* Proporție pătrată pentru ecrane foarte mici */
+  }
+
+  .carousel-control {
+    font-size: 30px; /* Săgeți mai mici pentru telefoane */
+    height: 30px;
+    width: 30px;
+    line-height: 28px;
+  }
+
+  .carousel-bullet {
+    font-size: 20px; /* Indicatori mai mici */
+  }
+}
+
+
+/* sectiune-Evenimente */
+.container-mare {
+  width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  position: relative;
+  background-color: #f7e4c1;
+  padding: 20px 0;
+}
+
+.carusel-evenimente-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+}
+
+.carusel-evenimente-title {
+  text-align: left;
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #222;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.carusel-evenimente {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+}
+
+.carusel-evenimente-track {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.carusel-evenimente-item {
+  min-width: 25%;
+  text-align: left;
+  padding: 15px;
+}
+
+.carusel-evenimente-item img {
+  width: 100%;
+  height: auto;
+}
+
+.carusel-evenimente-item h5 {
+  margin-top: 10px;
+  font-size: 1rem;
+  color:#222;
+}
+
+.carusel-evenimente-item p {
+  font-size: 0.9rem;
+  color: #555;
+  margin: 0 0 10px;
+}
+
+.carusel-evenimente-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #222;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.carusel-evenimente-control-prev {
+  left: -20px;
+}
+
+.carusel-evenimente-control-next {
+  right: -20px;
+}
+
+/* Despre Noi */
+
+.despre-noi {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  align-self: start;
+  padding: 80px 0; 
+  margin-top: 60px;
+  margin-bottom: 30px;
+}
+.despre-noi a{
+  text-decoration: none;
+  
+}
+
+/* Fundal  extins */
+.despre-noi::before {
+  content: "";
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  height: 90%;
+  background-color: #cab2a3; 
+  z-index: -1;
+}
+
+/* Conținutul centrat */
+.continut {
+  display: flex;
+  max-width: 1000px; 
+  width: 90%; 
+  gap: 30px; 
+  align-items: center;
+  left: 70px;
+  position: relative;
+  z-index: 1;
+  
+}
+
+.text {
+  flex: 1;
+}
+
+.text h2 {
+  font-size: 42px; 
+  color: #222;
+  font-weight: bold;
+  margin-bottom: 19px;
+  position: relative;
+}
+
+.text h2::after {
+  content: "";
+  display: block;
+  width: 130px; 
+  height: 4px;
+  background-color:  #9D4536;
+  ;
+  margin-top: 15px;
+}
+
+.text p {
+  font-size: 25px; 
+  line-height: 1.6; 
+  color: #333;
+}
+
+
+.imagine {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  margin-right: -300px; 
+}
+
+.imagine img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+
+  transform: translateX(20%);
+}
+/* Responsivitate pentru ecrane medii (tablete) */
+@media (max-width: 768px) {
+  .despre-noi {
+    padding: 40px 10px; 
+  }
+
+  .continut {
+    flex-direction: column; 
+    align-items: center;
+    left: 0; 
+    gap: 20px; 
+  }
+
+  .text h2 {
+    font-size: 32px; 
+  }
+
+  .text p {
+    font-size: 18px; 
+  }
+
+  .imagine {
+    margin-right: 0; 
+    transform: none; 
+  }
+
+  .imagine img {
+    max-width: 400px; 
+  }
+}
+
+/* Responsivitate pentru ecrane mici (telefoane) */
+@media (max-width: 480px) {
+  .despre-noi {
+    padding: 20px 5px; 
+  }
+
+  .text h2 {
+    font-size: 24px; 
+  }
+
+  .text p {
+    font-size: 14px; 
+  }
+
+  .imagine img {
+    max-width: 300px; 
+  }
+}
+
+
+
+/* Subsol */
+
+.subsol {
+  background-color: #9D4536;
+  color: white;
+  width: 100%;
+  padding: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+/* Coloană Stânga */
+.col-stanga {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  max-width: 300px;
+  gap: 25px;
+}
+.col-sus-stanga{
+  flex-direction: row;
+  display: flex;
+  gap: 30px;
+}
+.col-stanga .logo img {
+  max-width: 110px;
+  
+}
+
+.col-stanga .text-subsol p {
+  margin: 20px 0;
+  font-size: 17px;
+}
+
+.col-stanga .copyright {
+  font-size: 15px;
+  margin: 5px 0;
+}
+
+/* Coloană Centru */
+.col-centru {
+  display: flex;
+  flex-direction: column;
+  align-items:center;
+  max-width: 300px;
+  margin-left: -30px;
+}
+
+.col-centru .linkuri-subsol {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.col-centru .linkuri-subsol a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  display: block;
+  margin-top:20px;
+}
+
+.col-centru .linkuri-subsol a:hover {
+  text-decoration: underline;
+  color: #cab2a3;
+
+}
+
+.col-centru nav {
+  display: flex;
+  gap: 10px;
+}
+
+.col-centru nav button {
+  background-color: #ffffff;
+  color: #cab2a3;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 0.9em;
+}
+
+.col-centru nav button:hover {
+  background-color: #e6c087;
+}
+
+/* Coloană Dreapta */
+.col-dreapta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.col-dreapta .social {
+  display: flex;
+  gap: 30px;
+}
+
+.col-dreapta .social a {
+  color: #fff;
+  margin-top: 20px;
+  font-size: 25px;
+}
+.col-dreapta .social a:hover {
+  background-color: #9D4536;
+  color:  #cab2a3;
+}
+
+
+.col-dreapta .termeni {
+  font-size: 20x;
+  margin-top: 60px;
+}
+
+.col-dreapta .termeni a {
+  color: #fff;
+  text-decoration: underline;
+}
+
+.col-dreapta .termeni a:hover {
+  color: #cab2a3;
+}
+.buton-logare-subol{
+  background-color: white;
+  color: #9D4536;
+  border: 2px solid #9D4536;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.buton-logare-subol:hover {
+  background-color: #9D4536;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .antet {
+      flex-direction: column;
+      padding: 10px;
+  }
+
+  .container-antet {
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 15px;
+  }
+
+  .carousel {
+      width: 100%;
+  }
+
+  .sectiune-evenimente .eveniment {
+      width: 45%;
+      margin: 10px auto;
+  }
+
+  .despre-noi .continut {
+      flex-direction: column;
+      gap: 15px;
+  }
+
+  .subsol {
+      flex-direction: column;
+      gap: 20px;
+  }
+
+  .subsol .col-stanga,
+  .subsol .col-centru,
+  .subsol .col-dreapta {
+      text-align: center;
+      flex: unset;
+      margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .sectiune-evenimente .eveniment {
+      width: 90%;
+  }
+}
+
+
+a:focus, button:focus {
+  outline: 2px solid #9D4536;
+  outline-offset: 2px;
+}
+@media (max-width: 768px) {
+  h2, h3 {
+      font-size: 80%;
+  }
+
+  p {
+      font-size: 14px;
+      line-height: 1.4;
+  }
+}
+@media (max-width: 1024px) {
+  .antet {
+    flex-direction: column;
+    text-align: center;
+    padding: 15px;
+  }
+
+  .container-antet {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .carousel {
+    width: 90%;
+    aspect-ratio: 16/9; 
+  }
+
+  .despre-noi .continut {
+    flex-direction: column;
+    text-align: center;
+    gap: 20px;
+  }
+
+  .carusel-evenimente-item {
+    min-width: 80%; 
+  }
+
+  .subsol {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel {
+    aspect-ratio: 1/1;
+  }
+
+  .carousel-control {
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    line-height: 30px;
+  }
+
+  .carousel-bullet {
+    font-size: 18px;
+  }
+
+  .despre-noi .continut .imagine img {
+    width: 90%;
+  }
+
+  .carusel-evenimente-item h5,
+  .carusel-evenimente-item p {
+    font-size: 12px;
+  }
+}
+/* Stil pentru butonul de meniu */
+.buton-meniu {
+  background: none;
+  border: none;
+  color: #9D4536;
+  font-size: 24px;
+  cursor: pointer;
+}
+.dropdown {
+  display: inline-block;
+}
+
+.coloane-meniu {
+  display: flex;
+}
+
+.meniu-col1 .logo img {
+  width: 100px;
+}
+
+.dropdown a {
+  display: block;
+  text-decoration: none;
+  padding: 10px 15px;
+  color: #973c2c;
+  font-weight: bold;
+}
+
+.dropdown .content {
+  display: none;
+  position: absolute;
+  left: 80%;
+  top: 0%;
+  background-color: #bc958e;
+  box-shadow: 2px 2px 5px #973c2c;
+}
+
+.dropdown:hover .content {
+  display: block;
+}
+
+.dropdown a:hover {
+  background-color: #b07469;
+}
+
+.meniu-col1 a {
+  font-size: 25px;
+  color: white;
+}

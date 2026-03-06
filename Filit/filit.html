@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="ro">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Evenimente</title>
+    <link rel="stylesheet" href="filit.css" />
+    <link rel="stylesheet" href="../HomeBeforeLog/HomeBeforeLog.css" />
+    <link rel="stylesheet" href="../HomeAfterLog/HomeAfterLog.css" />
+    <!-- Link către fonturi și pictograme -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Secțiunea de antet -->
+    <header class="antet">
+      <!-- Logo-ul site-ului -->
+      <div class="logo">
+        <a href="/HomeAfterLog/HomeAfterLog.html"><img src="/imagini/logo.png" alt="Logo" /></a>
+        <!-- Înlocuiește cu calea corectă a imaginii logo -->
+      </div>
+
+      <!-- Container pentru căutare și butoane -->
+      <div class="container-antet">
+        <div class="bara-cautare-meniu">
+          <!-- Bara de căutare -->
+          <div class="bara-cautare">
+            <input type="text" placeholder="Caută..." />
+            <button><i class="bx bx-search"></i></button>
+          </div>
+
+          <!-- Link către pagina de Favorite -->
+          <a href="/Favorite/Favorite.html" class="buton-favorite"
+            ><i class="bx bx-star"></i
+          ></a>
+
+          <!-- Link către pagina Evenimentele mele -->
+          <a
+            href="/evenimentele-mele/evenimentele-mele.html"
+            class="buton-evenimente"
+            >Evenimentele mele</a
+          >
+
+          <!-- Meniu -->
+         <div class="dropdown">
+          <!-- Butonul de meniu -->
+          <button class="buton-meniu"><i class="bx bx-menu"></i></button>
+          <div class="content">
+            <div class="coloane-meniu">
+              <div class="meniu-col1">
+                <div class="logo">
+                  <img src="/imagini/logo.png" alt="CulturAll" />
+                </div>
+                <a href="#"><i class="bx bxl-facebook"></i></a>
+                <a href="#"><i class="bx bxl-instagram"></i></a>
+                <a href="#"><i class="bx bx-envelope"></i></a>
+              </div>
+              <div class="meniu-col2">
+                <a href="/evenimente1/eveniment1.html">Evenimente</a>
+                <a href="/Arta/tipEveniment.html">Arta si Cultura</a>
+                <a href="/EvenimentMuzica/EvenimentMuzica.html">Muzica</a>
+                <a href="/evenimentTeatru/EvenimentTeatru.html">Teatru</a>
+                <a href="/Eat&Drink/Eat&Drink.html">Eat & Drink</a>
+                <a href="/Monden/monden.html">Monden</a>
+                <a href="/Sport/sport.html">Sport</a>
+                <a href="/Carte/carte.html">Carte</a>
+                <a href="/Abonament/Abonment.html">Abonamente</a>
+                <a href="/EvenimentUnic/enevimentUnic.html">Eveniment Surpriza</a>
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+    </header>
+
+    <div class="event-conatiner">
+      <header class="header">
+        <img src="images/filit.png" alt="FILIT Logo" class="logo" />
+        <h1>filit 2024</h1>
+        <p>23 - 27 octombrie 2024</p>
+      </header>
+
+      <section class="event-conatiner-intro">
+        <h2>Ce este filit?</h2>
+        <p>
+          Festivalul Internațional de Literatură și Traducere Iași (FILIT) este
+          un proiect cultural de amploare, care aduce împreună în România sute
+          de profesioniști din diverse domenii culturale: scriitori,
+          traducători, editori, organizatori de festivaluri, critici literari,
+          librari, distribuitori de carte, manageri culturali și jurnaliști.
+        </p>
+        <p>
+          Pe parcursul a cinci zile, FILIT găzduiește numeroase evenimente
+          diverse, precum întâlniri literare cu figuri marcante ale literaturii
+          internaționale, nopți albe dedicate poeziei și muzicii, ateliere și
+          mese rotunde pentru profesioniști, concerte, lecturi și alte
+          activități culturale.
+        </p>
+      </section>
+
+      <section class="event-conatiner-events">
+        <h2>Expoziții | 23-27 octombrie 2024</h2>
+
+        <div class="event">
+          <div class="event-content">
+            <h3>Casa FILIT (Piața Unirii) | 10:00-20:00</h3>
+            <p id="details1">
+              <strong>"Literatură de bandă"</strong> <br />
+              Expoziție de benzi desenate de Bogdan Chelariu
+            </p>
+          </div>
+          <div class="buttons-container">
+            <img
+              onclick="divVisibility('details1');"
+              src="images/arrow-down.png"
+              alt="Arrow Down"
+            />
+            <img src="images/star-empty.png" class="star-icon" alt="Stea" />
+            <img src="images/plus-circle.png" class="plus-icon" alt="Plus" />
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-content">
+            <h3>Muzeul „Nicolae Gane” – Galeria Artei Ieșene | 10:00-17:00</h3>
+            <p id="details2">
+              <strong
+                >"Je vous souhaite d'être follement aimée sau viața începută
+                precum pantoful stâlcit cu care vorbesc în mine"</strong
+              >
+              <br />
+              Instalație de Leontin Păun
+            </p>
+          </div>
+          <div class="buttons-container">
+            <img
+              onclick="divVisibility('details2');"
+              src="images/arrow-down.png"
+              alt="Arrow Down"
+            />
+            <img src="images/star-empty.png" class="star-icon" alt="Stea" />
+            <img src="images/plus-circle.png" class="plus-icon" alt="Plus" />
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-content">
+            <h3>Muzeul „Vasile Pogor” – Casa Junimii | 10:00-17:00</h3>
+            <p id="details3">
+              <strong
+                >Sala Istoria locului și archeologie (II): „La ceas de
+                taină”</strong
+              >
+              <br />
+              Expoziție dedicată scriitorilor Constantin Negruzzi (1808-1868) și
+              Iacob Negruzzi (1842-1932) <br />
+              Curator: Lăcrămioara Agrigoroaiei <br />
+              Sala Studio J: ,,Suprapuneri" <br />
+              Expoziție de Ioniță Benea
+            </p>
+          </div>
+          <div class="buttons-container">
+            <img
+              onclick="divVisibility('details3');"
+              src="images/arrow-down.png"
+              alt="Arrow Down"
+            />
+            <img src="images/star-empty.png" class="star-icon" alt="Stea" />
+            <img src="images/plus-circle.png" class="plus-icon" alt="Plus" />
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-content">
+            <h3>Muzeul „Sf. Ierarh Dosoftei – Mitropolitul” | 10:00-17:00</h3>
+            <p id="details4">
+              <strong
+                >"Când arta se transformă în carte și cartea în artă" de Ioana
+                Aida Furnică (Spania)</strong
+              >
+              <br />
+              Proiect realizat în cadrul primei ediții a Rezidențelor „No
+              Frontier”, 2024 – inițiativă a Muzeului Național al Literaturii
+              Române Iași <br />Partener: Asociația „Patrimoniu pentru
+              comunitate” Iași <br />
+              Curator: Dora Cană
+            </p>
+          </div>
+          <div class="buttons-container">
+            <img
+              onclick="divVisibility('details4');"
+              src="images/arrow-down.png"
+              alt="Arrow Down"
+            />
+            <img src="images/star-empty.png" class="star-icon" alt="Stea" />
+            <img src="images/plus-circle.png" class="plus-icon" alt="Plus" />
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-content">
+            <h3>
+              Muzeul „Mihai Eminescu” – Colecția „Istoria teatrului românesc” |
+              10:00-17:00
+            </h3>
+            <p id="details5">
+              <strong>"Capcanele traducerilor"</strong> <br />
+              Expoziție organizată în parteneriat cu Arhivele Naționale Iași și
+              Biblioteca Centrală Universitară „Mihai Eminescu” Iași <br />
+              Curator: Laura Terente
+            </p>
+          </div>
+          <div class="buttons-container">
+            <img
+              onclick="divVisibility('details5');"
+              src="images/arrow-down.png"
+              alt="Arrow Down"
+            />
+            <img src="images/star-empty.png" class="star-icon" alt="Stea" />
+            <img src="images/plus-circle.png" class="plus-icon" alt="Plus" />
+          </div>
+        </div>
+
+        <div class="event">
+          <div class="event-content">
+            <h3>Casa Muzeelor | 10:00-17:00</h3>
+            <p id="details6">
+              <strong>Expoziții temporare (parter): „Voices of War”</strong>
+              <br />
+              Instalație audio imersivă de Cosmin Perța și Denys Vasylyev <br />
+              Curator: Ana Negoiță <br />
+              <strong>Foaier (parter): „Cu grimonul pe oglindă”</strong> <br />
+              Expoziție dedicată artistei Anny Braesky (1902-1984)
+              <br />Parteneri: Asociația „Patrimoniu pentru comunitate” Iași,
+              Teatrul Național Iași, Radio România Iași <br />
+              <strong
+                >Muzeul Copilăriei în Comunism: „Experimentul Zaica la la
+                Petrila”</strong
+              >
+              <br />
+              Expoziție de Ion Barbu
+            </p>
+          </div>
+          <div class="buttons-container">
+            <img
+              onclick="divVisibility('details6');"
+              src="images/arrow-down.png"
+              alt="Arrow Down"
+            />
+            <img src="images/star-empty.png" class="star-icon" alt="Stea" />
+            <img src="images/plus-circle.png" class="plus-icon" alt="Plus" />
+        </div>
+      </section>
+    </div>
+
+    <script src="filit.js"></script>
+
+    <!-- Evenimente în săptămâna aceasta -->
+    <div class="container-mare">
+      <div class="carusel-evenimente-spt-container">
+          <h2 class="carusel-evenimente-spt-title">Evenimente Săptămâna Aceasta</h2>
+          <div class="carusel-evenimente-spt" id="evenimenteCarousel">
+              <div class="carusel-evenimente-spt-track">
+                  <div class="carusel-evenimente-spt-item">
+                      <img src="/imagini/arta sicultura.png" alt="Eveniment 1">
+                      <h5>Eveniment 1</h5>
+                      <p>Scurtă descriere</p>
+                  </div>
+                  <div class="carusel-evenimente-spt-item">
+                      <img src="/imagini/arta sicultura.png" alt="Eveniment 2">
+                      <h5>Eveniment 2</h5>
+                      <p>Scurtă descriere</p>
+                  </div>
+                  <div class="carusel-evenimente-spt-item">
+                      <img src="/imagini/arta sicultura.png" alt="Eveniment 3">
+                      <h5>Eveniment 3</h5>
+                      <p>Scurtă descriere</p>
+                  </div>
+                  <div class="carusel-evenimente-spt-item">
+                      <img src="/imagini/arta sicultura.png" alt="Eveniment 4">
+                      <h5>Eveniment 4</h5>
+                      <p>Scurtă descriere</p>
+                  </div>
+              </div>
+          </div>
+          <button class="carusel-evenimente-spt-control carusel-evenimente-spt-control-prev" id="prevBtn">&lt;</button>
+          <button class="carusel-evenimente-spt-control carusel-evenimente-spt-control-next" id="nextBtn">&gt;</button>
+      </div>
+  </div>
+  <script src="carusel.js"></script>
+
+   <!-- Subsol -->
+ 
+
+   <footer class="subsol">
+    <!-- Coloană Stânga -->
+   
+    <div class="col-stanga">
+      <div class="col-sus-stanga">
+      <div class="logo">
+        <img src="/imagini/logo.png" alt="CulturAll">
+      </div>
+      <div class="text-subsol">
+        <p>Lorem Ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor...</p>
+      </div>
+    </div>
+      <div class="copyright">
+        &copy; 2024 - CulturAll. Toate drepturile rezervate.
+      </div>
+    </div>
+  
+    <!-- Coloană Centru -->
+    <div class="col-centru">
+      <div class="linkuri-subsol">
+        <a href="/evenimente1/eveniment1.html">Evenimente</a>
+        <a href="/HomeAfterLog/HomeAfterLog.html">Despre noi</a>
+      </div>
+      <nav>
+     <!-- Butonul de Log in cu link către pagina de autentificare -->
+     <a href="/Log-in/log-in.html" class="buton-logare-subol">Log in</a>
+          
+     <!-- Butonul de Sign up cu link către pagina de înregistrare -->
+     <a href="/Sing-up/sing-up.html" class="buton-inregistrare"><i class="fas fa-globe"></i> Sign up</a>
+     
+      </nav>
+    </div>
+  
+    <!-- Coloană Dreapta -->
+    <div class="col-dreapta">
+      <div class="social">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bx-envelope"></i></a>
+      </div>
+      <div class="termeni">
+        <a href="#">Termeni și condiții</a>
+      </div>
+    </div>
+  </footer>
+
+  
+<script >const track = document.querySelector('.carusel-evenimente-spt-track');
+  const prevBtn = document.getElementById('prevBtn');
+  const nextBtn = document.getElementById('nextBtn');
+  const items = document.querySelectorAll('.carusel-evenimente-spt-item');
+  
+  let currentIndex = 0;
+  
+  function updateCarousel() {
+      const width = items[0].getBoundingClientRect().width;
+      track.style.transform = `translateX(-${currentIndex * width}px)`;
+  }
+  
+  nextBtn.addEventListener('click', () => {
+      if (currentIndex < items.length - 1) {
+          currentIndex++;
+          updateCarousel();
+      }
+  });
+  
+  prevBtn.addEventListener('click', () => {
+      if (currentIndex > 0) {
+          currentIndex--;
+          updateCarousel();
+      }
+  });
+  
+  // Ajustare dimensiuni la încărcare
+  window.addEventListener('resize', updateCarousel);
+  
+</script>
+  </body>
+</html>
