@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Filtrare Evenimente</title>
+  <!-- Linkuri externe pentru fonturi și iconițe -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@300;900&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="filtre.css">
+</head>
+<body>
+  <!-- Butonul de filtrare -->
+  <button class="buton-filtru" id="butonFiltru">
+    <i class="fas fa-sliders-h"></i> <!-- Iconița filtrului -->
+  </button>
+
+  
+  <!-- Secțiunea de filtre -->
+  <div class="panou-filtre" id="panouFiltre">
+    <h2>Filtre</h2>
+    <div class="continut-filtre">
+      <!-- Filtru Data -->
+      <div class="grup-filtru">
+        <h3>Data</h3>
+        <label for="data"></label>
+        <input type="date" id="data" name="data">
+      </div>
+
+      <!-- Filtru Locație -->
+      <div class="grup-filtru">
+        <h3>Locație</h3>
+        <label for="locatie"></label>
+        <input type="text" id="locatie" name="locatie" placeholder="Exemplu: București">
+      </div>
+
+      <!-- Filtru Categorie -->
+      <div class="grup-filtru">
+        <h3>Categorie</h3>
+        <label for="categorie"></label>
+        <select id="categorie" name="categorie">
+          <option value="">Toate categoriile</option>
+          <option value="arta">Artistice și culturale</option>
+          <option value="muzica">Educaționale</option>
+          <option value="teatru">Sportive</option>
+          <option value="sport">Festivaluri și târguri</option>
+          <option value="educatie">Evenimente caritabile</option>
+          <option value="educatie">Evenimente de lifestyle</option>
+       
+        </select>
+      </div>
+
+      <!-- Filtru Preț -->
+      <div class="grup-filtru">
+        <h3>Preț</h3>
+        <div class="slider-container">
+          <label for="price"></label>
+          <input id="sliderMin" type="range" min="10" max="950" value="10" step="1">
+          <input id="sliderMax" type="range" min="10" max="950" value="950" step="1">
+        </div>
+        <div class="price-inputs">
+          <div>
+            <label for="minInput">min</label>
+            <input id="minInput" type="number" value="99">
+            <span class="ron">ron </span>
+          </div>
+          <div>
+            <label for="maxInput">max</label>
+            <input id="maxInput" type="number" value="950">
+            <span>ron</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Filtru Rating -->
+      <div class="grup-filtru">
+        <h3>Rating</h3>
+        <label for="rating"></label>
+        <select id="rating" name="rating">
+          <option value="">Orice rating</option>
+          <option value="5">5 stele</option>
+          <option value="4">4 stele</option>
+          <option value="3">3 stele</option>
+          <option value="2">2 stele</option>
+          <option value="1">1 stea</option>
+        </select>
+      </div>
+
+      <!-- Filtru Tip de Eveniment -->
+      <div class="grup-filtru-checkbox">
+        <h3>Tip de eveniment</h3>
+        <div>
+          <input type="checkbox" id="concert" name="tipEveniment" value="concert">
+          <label for="concert">Concert</label>
+        </div>
+        <div>
+          <input type="checkbox" id="festival" name="tipEveniment" value="festival">
+          <label for="festival">Festival</label>
+        </div>
+        <div>
+          <input type="checkbox" id="workshop" name="tipEveniment" value="workshop">
+          <label for="workshop">Workshop</label>
+        </div>
+        <div>
+          <input type="checkbox" id="expozitie" name="tipEveniment" value="expozitie">
+          <label for="expozitie">Expoziție</label>
+        </div>
+      </div>
+
+      <!-- Buton de Aplicare -->
+      <button class="aplicaFiltre" id="aplicaFiltre">Aplică filtre</button>
+    </div>
+  </div>
+  <script src="/filtre.js"></script>
+</body>
+</html>

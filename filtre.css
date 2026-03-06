@@ -1,0 +1,263 @@
+/* Panoul lateral de filtre */
+.panou-filtre {
+  position: fixed;
+  align-items: center;
+  top: 0;
+  right: -100%; 
+  width: 300px;
+  height: 100%;
+  background-color: #F5EDE6; 
+  box-shadow: -2px 0 6px rgba(116, 52, 52, 0.1);
+  transition: right 0.3s ease;
+  padding: 40px 80px; 
+  z-index: 1000;
+  overflow-y: auto;
+  font-family: 'Mulish', sans-serif;
+}
+
+/* Titlul din panoul de filtre */
+.panou-filtre h2 {
+  font-family: 'Mulish', sans-serif;
+  font-size: 32px;
+  margin-bottom: 30px; 
+  color: #9D4536;
+  text-align: center;
+  border-bottom: 2px solid #D9C5B2;
+  padding-bottom: 10px;
+}
+.panou-filtre h3{font-family: 'Mulish', sans-serif;
+  font-size: 20px;
+  margin-bottom: 10px; 
+  color: #9D4536;
+ 
+
+  padding-bottom: 10px;}
+/* Grupurile de filtre */
+.continut-filtre .grup-filtru {
+  margin-bottom: 30px; 
+}
+
+.grup-filtru label {
+  font-size: 18px;
+  color: #9D4536;
+  font-weight: bold;
+  display: flex; 
+  align-items: center; 
+  margin-bottom: 20px;
+}
+
+/* Stilizare input-uri text și date */
+.grup-filtru input[type="date"],
+.grup-filtru input[type="text"] {
+  font-family: 'Mulish', sans-serif;
+  color: #6B4E3D;
+  padding: 12px;
+  border: 1px solid #D9C5B2;
+  border-radius: 30px;
+  background-color: #FFFDFB;
+  font-size: 14px;
+  width: 100%;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 4px rgba(116, 52, 52, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.grup-filtru input[type="date"]:focus,
+.grup-filtru input[type="text"]:focus {
+  outline: none;
+  border-color: #9D4536;
+}
+
+/* Stil pentru select */
+.grup-filtru select {
+  font-family: 'Mulish', sans-serif;
+  color: #6B4E3D;
+  padding: 12px;
+  border: 1px solid #D9C5B2;
+  border-radius: 30px;
+  background-color: #FFFDFB;
+  font-size: 14px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(116, 52, 52, 0.1);
+  transition: border-color 0.3s ease;
+}
+
+.grup-filtru select:focus {
+  outline: none;
+  border-color: #9D4536;
+}
+
+/* Stilizare pentru rating select */
+.grup-filtru select[name="rating"] {
+  background-image: url('data:image/svg+xml,%3Csvg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20"%3E%3Cpath fill="%239D4536" d="M5.5 7L10 12l4.5-5z"/%3E%3C/svg%3E');
+  background-repeat: no-repeat;
+  background-position: right 15px center;
+  background-size: 12px 12px;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+/* Stilizare checkbox-uri */
+.grup-filtru-checkbox label {
+  font-size: 18px;
+  color: #9D4536;
+  font-weight: bold;
+  margin-bottom: 0px;
+  display: block;
+}
+
+.grup-filtru-checkbox div {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.grup-filtru-checkbox input[type="checkbox"] {
+  accent-color: #9D4536;
+  width: 18px;
+  height: 18px;
+  margin-right: 10px; 
+  cursor: pointer;
+}
+
+.grup-filtru-checkbox label[for] {
+  font-size: 14px;
+  color: #6B4E3D;
+}
+
+/* Stilizarea slider-ului de preț */
+.slider-container {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 20px auto;
+}
+
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 4px;
+  background: #9D4536;
+  outline: none;
+  border-radius: 30px;
+  position: absolute;
+  pointer-events: none; 
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #9D4536;
+
+  border-radius: 50%;
+  cursor: pointer;
+  pointer-events: all; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 18px;
+  height: 18px;
+  background-color: #9D4536;
+  border: 2px solid #e4b5b5;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.price-inputs {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+  gap: 20px;
+}
+
+.price-inputs div {
+  display: flex;
+  align-items: center;
+
+  gap: 20px;
+}
+
+input[type="number"] {
+  width: 50px;
+  padding: 4px;
+  border: 1px solid #9D4536;
+  border-radius: 30px;
+  text-align: right;
+  font-size: 14px;
+  
+}
+
+input[type="number"]:focus {
+  border-color: #9D4536;
+  outline: none;
+  
+}
+
+.ron {
+  font-size: 14px;
+  color: #9D4536;
+  
+}
+
+/* Butonul "Aplică filtre" */
+.aplicaFiltre {
+  background-color: #9D4536;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease, transform 0.2s;
+  margin-top: 20px; 
+  margin-bottom: 100px; 
+}
+
+.aplicaFiltre:hover {
+  background-color: #D9C5B2;
+  color: #9D4536;
+  transform: scale(1.05);
+}
+
+/* Butonul de filtrare */
+.buton-filtru {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #9D4536;
+  color: #FFFDFB;
+  border: 2px solid #D9C5B2;
+  padding: 12px 18px;
+  border-radius: 80%;
+  font-size: 20px;
+  cursor: pointer;
+  box-shadow: 0px 4px 6px rgba(108, 19, 19, 0.2);
+  transition: all 0.3s ease-in-out;
+  z-index: 1001;
+}
+
+.buton-filtru:hover {
+  background-color: #D9C5B2;
+  color: #9D4536;
+  transform: scale(1.1);
+}
+
+/* Bara de scroll personalizată */
+.panou-filtre::-webkit-scrollbar {
+  width: 8px;
+}
+
+.panou-filtre::-webkit-scrollbar-track {
+  background: #F5EDE6;
+}
+
+.panou-filtre::-webkit-scrollbar-thumb {
+  background: #9D4536;
+  border-radius: 10px;
+}
